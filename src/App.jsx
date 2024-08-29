@@ -34,6 +34,7 @@ function App() {
         </ol>
         <hr/>
       </div>
+      <p>&#169;2024 Rojo's Ltd | All Rights Are Reserved</p>
     </div>
   );
 }
