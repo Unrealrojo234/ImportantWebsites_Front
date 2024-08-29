@@ -17,16 +17,18 @@ function App() {
 
   return (
     <div className="container-fluid">
-      <h1 className="text-center text-primary">Important Websites</h1>
+      <h1 className="text-center text-primary">Important Websites 🤯</h1>
       <div>
         <ol>
           {cool.map((data) => (
-            <li>
-              <div key={data._id}>
+            <li key={data._id}>
+              <div >
                 <h3>{data.name}</h3>
-                <p>_{data.use}</p>
-                <a href={data.link}>{data.link}</a>
+                <>_{data.use}</>
+                <br/>
+                <a href={data.link} className="link-primary" style={{textDecoration:'none'}}>Checkout Site</a>
               </div>
+              <br/>
             </li>
           ))}
         </ol>
